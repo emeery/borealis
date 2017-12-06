@@ -1,0 +1,87 @@
+// //https://stackoverflow.com/questions/5135019/css-opacity-only-to-background-color-not-the-text-on-it
+// $color-red: #cc615f;
+// $color-grey: #1c262b;
+// $color-grey--light: #29363e;
+
+// $color-orange: #e6ac5e;
+// $color-blue: #007ece;
+// $color-green: #8fca53;
+// $color-purple: #68647c;
+// $color-gold: #efb05a;
+// $color-primary: grey;
+
+
+// $bp-s: 43.75em; //700px;
+// $bp-xs: 34.375em; //550px;
+
+// .render-header-vitae
+// {
+  
+  
+//    // top: 0;
+//     //position: absolute;
+//     text-align: center;
+//     //display: flex;
+//     //position: fixed;
+
+//   h1{
+//     color: #07D29E;
+//     font-size: 10rem;
+//   }
+//   header{
+//     position: fixed;
+//     top: 0;
+//     bottom: 10px;
+//     width: 100%;
+//     z-index: -1;
+//     height: 100px;
+//     background: orangered;
+//   }
+//   .button{
+//     display: inline-block;
+//     margin: 1rem 0;
+//     color: white;
+//     font-weight: 500;
+//     font-size: 1.3rem;
+//     background: $color-primary;
+//     letter-spacing: .02em;
+//     border: none;
+//     border-radius: 5px;
+//     padding: .8rem 1rem .9rem;
+//     text-shadow: 0 1px rgba(black,.3);
+//     box-shadow: 0 0 2px rgba(black,.2);
+  
+//     @media (max-width: $bp-s){
+//       padding: .5rem .7rem .6rem;
+//       font-size: 1rem;
+//     }
+  
+//     &:hover{
+//       background: lighten($color-primary,5%);
+//       color: #fff;
+//     }
+//     &:focus,
+//     &:active,
+//     &:focus:active{
+//       background: darken($color-primary,5%);
+//       border-color: darken($color-primary,5%);
+//       box-shadow: 0 2px 5px 0 rgba(black,.5) inset;
+//     }
+//   }
+// }
+// // .navbar-nav {
+// //     letter-spacing: 1px;
+// //     li.nav-item {
+// //       a.nav-link {
+// //         color: white;
+// //         &:hover {
+// //           color: $theme-success;
+// //           outline: none;
+// //         }
+// //         &:active,
+// //         &:focus {
+// //           color: white;
+// //         }
+// //       }
+// //     }
+// //   }

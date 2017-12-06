@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Encode+Sans+Expanded);
+
+
+.navbarboots-landing{
+	nav	{
+		padding-top: 10px;
+		.ul-landing{
+			//color: rgb(20, 98, 243);
+			li{display: inline; padding: 19px;} 
+			
+			.navbar-title-landing{
+				
+				a {
+					color:#FF7C8A;
+					font-family: 'Encode Sans Expanded', serif;
+				}
+			}
+			
+			.navbar-menu  {
+				float: right;
+				padding: 10px; 
+				font-size: 22px;
+				list-style: none; // the bullets
+				//li {display: inline; padding-left: 10px;}
+				
+			
+				li > a {
+				font-family: 'Encode Sans Expanded', serif;
+				color: #FF7C8A;
+				
+				text-decoration:none; // subrayado
+				} // li
+				li > a:hover,
+				li > a:focus{
+					color: #F05F40; // acerca, portafolio, contacto
+				} // li
+			} // navbar-menu
+		} // ul-landing
+	} // nav
+} // navbarboots-landing 
+@media (max-widht: 767px) {
+	nav{
+		display:none;
+	}
+}

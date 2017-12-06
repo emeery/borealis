@@ -1,0 +1,198 @@
+// https://farm3.staticflickr.com/2866/33806125362_25006f6c94_k.jpg
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Monserrat);
+
+	// Logeo.js
+ .container-logeo-vitae {
+    margin: 0px;
+    //position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    height: 10px;
+    text-align: center;
+    background-color: #ddd;
+	
+    .logeo-vitae{
+		background: url(https://lh3.googleusercontent.com/-g5D1w5koq2g/WDL92v55toI/AAAAAAAAIoI/CjQxH0I97Wwde_g4V5yNgS7QlINwpq8IgCJoC/w800-h600/ng-colab-space_night.gif);  
+        h1{
+            padding-top: 10px;
+			font-family: 'Pacifico', serif;
+            font-size: 48px;
+            text-align: center;
+            color: #212121;
+            text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+        }
+		.form{}	
+        .form-logeo-vitae {
+			
+			.input-logeo {
+				width: 200px;
+				background-color: #ddd;
+				color: #253849;
+				
+			}	 
+		}
+        .link-to{
+            font-family: 'Encode Sans Expanded', serif;
+            color: #fc6c85;
+            text-decoration:none;
+            &:hover, &:focus {
+               transform: scale(1.2);
+                //border-color: white;
+                color: orangered;
+            } 
+        }
+    } // .logeo-vitae
+}
+
+
+
+.form-logeo-vitae {
+    float: center;
+    .btn {
+        color: white;
+        background-color: transparent;
+        border-color: #ff7f50;
+        padding-bottom: 4px;
+        padding-top: 3px;
+        &:hover, &:focus {
+          //background: #00E1FF ease, transform .2s ease;
+          color: rgb(20, 98, 243);
+          transform: scale(1.2);
+          border-color: white;
+          color: orangered;
+      } 
+    }
+}
+.input-logeo {
+    background: transparent;
+    opacity: 0.6;
+    display: flex;
+    color: #f2ece4;
+    //background: transparent;
+    opacity: 0.6;
+    outline: none;
+    padding: 10px 40px; 
+    //background: transparent;
+    width: 300px;
+    border-radius: 25px;
+    //border: black;
+    &:hover, &:focus {
+        //background: #00E1FF ease, transform .2s ease;
+        color: salmon;
+        transform: scale(1.1);
+    }
+    
+}
+
+
+input::placeholder {
+    color: whitesmoke;
+}
+
+//   .wrap {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 205px;
+//     margin: 0;
+//     padding: 0;
+//     overflow: hidden;
+//   }
+  
+//   .header {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 200px;
+//     margin: 0;
+//     padding: 0;
+//     animation: move 20s infinite linear;
+//   }
+  
+//   @keyframes move {
+//     from {
+//       left: 0;
+//     }
+//     to {
+//       left: -2450px;
+//     }
+//   }
+  
+//   .header > div {
+//     width: 600px;
+//     height: 200px;
+//     margin: 0;
+//     padding: 0;
+//     border-right: 2px solid black;
+//     background-position: center;
+//     background-size: 600px auto;
+//     display: block;
+//     position: absolute;
+//     border-bottom: 5px solid black;
+//   }
+  
+//   .header > div.one {
+//    background:  url(http://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Rho_Ophiuchi.jpg/611px-Rho_Ophiuchi.jpg);
+//     margin-left: 0;
+//   }
+  
+//   .header > div.two {
+//    background:  url(http://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Dawn_at_swifts_creek_panorama.jpg/1280px-Dawn_at_swifts_creek_panorama.jpg);
+//     margin-left: 602px;
+//   }
+  
+//   .header > div.three {
+//    background:  url(http://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Mist_-_Ensay_region3.jpg/1024px-Mist_-_Ensay_region3.jpg);
+//     margin-left: 1204px;
+//   }
+  
+//   .header > div.four {
+//    background:  url(http://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Lower_Manhattan_from_Staten_Island_Ferry_Jan_2006.jpg/1280px-Lower_Manhattan_from_Staten_Island_Ferry_Jan_2006.jpg);
+//     margin-left: 1806px;
+//   }
+  
+//   .header > div.five {
+//    background:  url(http://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Mt_hotham_alpine_range_scenery.jpg/1024px-Mt_hotham_alpine_range_scenery.jpg);
+//     margin-left: 2408px;
+//   }
+  
+//   .header > div.six {
+//    background:  url(http://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Sydney_Harbour_Bridge_night.jpg/1024px-Sydney_Harbour_Bridge_night.jpg);
+//     margin-left: 3010px;
+//   }
+    // .input-logeo {
+    //     border: 1px solid #e8e8e8;
+    //     flex-grow: 1;
+    //     padding: 0 1.3 0 1.3rem;
+    //     font-size: 80.5%;
+
+    //     &:hover, &:focus {
+    //     background: #cccccc ease, transform .2s ease;
+    //     transform: scale(1.9);
+    //     }
+    // }  
+
+    // .form-logeo-vitae{
+//     text-align: center;
+// }
+    // .button-logeo{
+    //     background: transparent;
+    //     border: 2px solid whitesmoke;
+    //     color: whitesmoke;
+    //     cursor: pointer;
+    //     font-weight: 400;
+    //     font-size: 1.2em;
+    //     width: 40px;
+    //     margin-left: 1.3rem;
+    //     outline: none;
+    //     padding: 1.5rem 2.5rem;
+    //     border-radius: 20px;
+
+    //     &:hover, &:focus {
+    //         background: orange ease, transform .2s ease;
+    //         color: orange;
+    //         transform: scale(1.9);
+    //     }
+    // }

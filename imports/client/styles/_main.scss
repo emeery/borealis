@@ -1,0 +1,41 @@
+/* CSS declarations go here */
+* {
+    margin:0;
+    padding:0;
+}
+html{
+    font-size: 62.5%;
+    height: 100%;
+    overflow: hidden;
+}
+body{
+    // background: url(https://farm3.staticflickr.com/2560/32139955053_f5b4db4cbe_k.jpg);
+    // background-position: 50% 50%;
+    //color: #555555;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 3.1rem;
+    
+    color: black;
+    margin:0;
+    padding:0;
+    -webkit-perspective: 1px;
+    perspective: 1px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+@import './componentes/wrapper';
+@import './componentes/menu-parallax';
+@import './componentes/navbarboots-landing';
+@import './componentes/logeo-vitae';
+@import './componentes/landing-template';
+@import './componentes/funciones-vitae';
+@import './componentes/animacion-landing';
+@import './componentes/vitae-template';
+@import './componentes/navbarboots-vitae';
+@import './componentes/no-encontrado';
+
+

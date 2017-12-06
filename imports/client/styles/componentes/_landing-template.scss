@@ -1,0 +1,124 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Encode+Sans+Expanded);
+
+// Landing.js
+.container-landing {
+//background: url(https://www.collegefashion.net/.image/t_share/MTQzNjk3MzYxMzA5Mjc5OTI5/headerjpg.jpg); background-size: cover;
+background: url(https://lh3.googleusercontent.com/-g5D1w5koq2g/WDL92v55toI/AAAAAAAAIoI/CjQxH0I97Wwde_g4V5yNgS7QlINwpq8IgCJoC/w800-h600/ng-colab-space_night.gif);  
+//        - - - - -   
+  // Landing.js
+  .cabecera-landing {
+    height: 400px;
+  }
+  // CabeceraLanding.js
+  .cabecera-landing-js {
+    height:210px;
+    margin-top: 30px;
+    padding-top: 40px; // distancia del top
+    float: center;
+    h1{
+      text-align:center;
+      font-family: 'Encode Sans Expanded', serif;
+      color: lightseagreen;
+      font-size: 4rem;
+      span{color:ligthblue;}
+      
+    }
+    h2{
+      font-family: 'Encode Sans Expanded', serif;
+      color: #daf7a6;
+      font-size: 15px;
+      text-align:center;
+    }
+    hr{
+      width: 150px;
+      //text-align: left;
+      padding-left: 50px;
+      //margin-top: 3px;
+      margin: auto;
+      float: center;
+      border: 0; 
+      height: 2px;
+      background: whitesmoke;
+      background-image: linear-gradient(to right, #ccc, salmon, #ccc);
+    }
+    .reloj-cabecera {
+      h2{
+        font-size:8rem !important;
+        color: lightcoral;
+        padding-bottom: 40px;
+        }
+    }
+  
+    span{color:lightblue; }
+  } // cabecera-landing-js
+   
+  // CuerpoLanding.js
+  .cuerpo-landing-about{
+    font-family: 'Encode Sans Expanded', serif;
+    color: #daf7a6;
+    //font-size: 6rem;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-color: black; 
+    padding: 100px;
+    word-wrap: break-word; // letra fuera del div
+		
+		.form-cuerpo-landing {
+      ::-moz-placeholder {color: grey;}
+      display: center;
+			input {width: 200px; background-color:#ddd; color:black;}
+			button{
+			border-color: orange;
+			font-size:20px;
+			height:15px; 
+			color:grey; 
+			background-color: black; } // button
+		}
+		.cuerpo-landing-notes{
+		
+      
+      .container-notes {
+        //background-color: firebrick;
+        .p{color:pink; font-size:15px;
+          display:inline; border-color:orange }
+        
+      }
+    } 
+    
+   
+    } // cuerpo-landing-about
+  
+  .pie-landing{
+    // PieLanding.js 
+    .footer-landing {
+      padding-top: 15px;
+      padding-bottom: 2px;
+      //text-align: center;
+      background: url(https://lh3.googleusercontent.com/-g5D1w5koq2g/WDL92v55toI/AAAAAAAAIoI/CjQxH0I97Wwde_g4V5yNgS7QlINwpq8IgCJoC/w800-h600/ng-colab-space_night.gif); 
+      h1{
+        //vertical-align: 10px;;
+        font-family: 'Encode Sans Expanded', serif;
+        color: yellowgreen;
+        font-size: 6rem;
+        //display: flex;
+        text-align: center;
+        padding-bottom: 40px;
+        padding-top: 0px;
+      } // h1
+    } // footer-landing
+  } // pie-landing
+  
+} // container-landing
+
+
+
+
+  
+
+
+    
+  
+   
+
