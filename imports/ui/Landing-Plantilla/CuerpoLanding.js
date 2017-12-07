@@ -50,6 +50,10 @@ class CuerpoLanding extends React.Component{
 			}); */
 		}
 	}; // onSubmit
+	primeraLetraUsuario() {
+		var usuario = Meteor.user();
+		return <p>{usuario}</p>
+	} 
 	correoUsuarioActual()	{
 		var estilosEmail = {color: 'lightblue'};
 		var user = Meteor.user();
@@ -61,6 +65,7 @@ class CuerpoLanding extends React.Component{
 			<div className="cuerpo-landing-about">
 				<h1>{this.props.title}</h1>
 				<hr></hr>
+				
 				{this.correoUsuarioActual()}
 				<h3>introduce tu nota.</h3>
 				<div className='form-cuerpo-landing'>
