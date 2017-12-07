@@ -8,11 +8,11 @@ if (Meteor.isServer) {
 		return Notas.find({userId: this.userId});
 	});
 }
-if (Meteor.isServer) {
-	Meteor.publish('email', () => {
-		return Notas.find({_id: this.userId},{fields:1, profile:1 });
-	});
-}
+// if (Meteor.isServer) {
+// 	Meteor.publish('email', () => {
+// 		return Notas.find({_id: this.userId},{fields:1, profile:1 });
+// 	});
+// }
 
 Meteor.methods({
 	'nota.insert'(noteName){
