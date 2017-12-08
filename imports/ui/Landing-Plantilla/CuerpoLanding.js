@@ -68,12 +68,15 @@ class CuerpoLanding extends React.Component{
 				
 				{this.correoUsuarioActual()}
 				<h3>introduce tu nota.</h3>
+
+				
 				<div className='form-cuerpo-landing'>
 					<form onSubmit={this.onSubmit}>
 					<input type='text' name='noteName' placeholder='agrega nota'/>
-					<button>add</button>
+					<button className='btn'>add</button>
 					</form>
 				</div>
+				
 				<div>
 					{this.renderNotas()}
 				</div>

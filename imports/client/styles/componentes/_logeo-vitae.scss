@@ -4,15 +4,16 @@
 
 	// Logeo.js
  .container-logeo-vitae {
-    margin: 0px;
+    margin: -20px;
     //position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
-    height: 10px;
+    //height: 10px;
     text-align: center;
     background-color: #ddd;
-	
+	position: relative;
     .logeo-vitae{
-		background: url(https://lh3.googleusercontent.com/-g5D1w5koq2g/WDL92v55toI/AAAAAAAAIoI/CjQxH0I97Wwde_g4V5yNgS7QlINwpq8IgCJoC/w800-h600/ng-colab-space_night.gif);  
+        //background: url(https://lh3.googleusercontent.com/-g5D1w5koq2g/WDL92v55toI/AAAAAAAAIoI/CjQxH0I97Wwde_g4V5yNgS7QlINwpq8IgCJoC/w800-h600/ng-colab-space_night.gif);  
+        background: url(../images/sky.jpg) no-repeat center center fixed;
         h1{
             padding-top: 10px;
 			font-family: 'Pacifico', serif;

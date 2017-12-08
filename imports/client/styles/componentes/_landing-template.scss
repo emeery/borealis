@@ -4,6 +4,7 @@
 // Landing.js
 .container-landing {
 //background: url(https://www.collegefashion.net/.image/t_share/MTQzNjk3MzYxMzA5Mjc5OTI5/headerjpg.jpg); background-size: cover;
+
 background: url(https://lh3.googleusercontent.com/-g5D1w5koq2g/WDL92v55toI/AAAAAAAAIoI/CjQxH0I97Wwde_g4V5yNgS7QlINwpq8IgCJoC/w800-h600/ng-colab-space_night.gif);  
 //        - - - - -   
   // Landing.js
@@ -67,13 +68,13 @@ background: url(https://lh3.googleusercontent.com/-g5D1w5koq2g/WDL92v55toI/AAAAA
 		
 		.form-cuerpo-landing {
       ::-moz-placeholder {color: grey;}
-      display: center;
+      display: inline;
 			input {width: 200px; background-color:#ddd; color:black;}
 			button{
 			border-color: orange;
-			font-size:20px;
+			font-size:12px;
 			height:15px; 
-			color:grey; 
+			color:white; 
 			background-color: black; } // button
 		}
 		.cuerpo-landing-notes{
@@ -97,12 +98,16 @@ background: url(https://lh3.googleusercontent.com/-g5D1w5koq2g/WDL92v55toI/AAAAA
   
   .pie-landing{
     // PieLanding.js 
-    
+    margin-top:0px;
     .footer-landing {
-      padding-top: 15px;
-      padding-bottom: 2px;
-      height: 70px;
-      background: url(https://lh3.googleusercontent.com/-g5D1w5koq2g/WDL92v55toI/AAAAAAAAIoI/CjQxH0I97Wwde_g4V5yNgS7QlINwpq8IgCJoC/w800-h600/ng-colab-space_night.gif); 
+      padding-top: 0px;
+      padding-bottom: 0px;
+      //position: absolute;
+      
+      height: 100%;
+      //background: url(https://lh3.googleusercontent.com/-g5D1w5koq2g/WDL92v55toI/AAAAAAAAIoI/CjQxH0I97Wwde_g4V5yNgS7QlINwpq8IgCJoC/w800-h600/ng-colab-space_night.gif); 
+      background-color: rgba(40, 207, 180, 0.199);
+      margin-bottom: 10px;
       h1{
         //vertical-align: 10px;;
         font-family: 'Encode Sans Expanded', serif;
@@ -110,7 +115,7 @@ background: url(https://lh3.googleusercontent.com/-g5D1w5koq2g/WDL92v55toI/AAAAA
         font-size: 6rem;
         //display: flex;
         text-align: center;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
         padding-top: 0px;
       } // h1
     } // footer-landing

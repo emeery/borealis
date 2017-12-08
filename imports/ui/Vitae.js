@@ -5,7 +5,7 @@ import NavbarBoots from './Vitae-Plantilla/NavbarBoots';
 class Vitae extends React.Component {
     render() {
         return(<div>
-            <h1>Animals by Alphabet</h1>
+            <h1>Animales por alfabeto en inglés</h1>
             
             <div className="container">
               <div className="heading">A</div>
