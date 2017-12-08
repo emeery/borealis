@@ -1,6 +1,4 @@
-
+##salva tus notas.
 - - - - 
+#autor : Gerardo Bautista
 
-autor : Gerardo Bautista
-
-salva tus notas.
