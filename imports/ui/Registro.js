@@ -32,7 +32,7 @@ export default class Registro extends React.Component {
     render() {
         return(
             <div>
-                <h1>join bonafont</h1>
+                <h1>Salva tus notas</h1>
                 {this.state.error ? <p>{this.state.error}</p> : undefined}
                 <form onSubmit={this.onSubmit.bind(this)} noValidate>
                     <input type="email" ref="email" name="email" placeholder="email"/>

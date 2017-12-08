@@ -77,12 +77,17 @@ background: url(https://lh3.googleusercontent.com/-g5D1w5koq2g/WDL92v55toI/AAAAA
 			background-color: black; } // button
 		}
 		.cuerpo-landing-notes{
-		
+     
       
       .container-notes {
-        //background-color: firebrick;
+        background-color: firebrick;
+        border-radius: 10px;
+        margin-bottom: 4px;
         .p{color:pink; font-size:15px;
-          display:inline; border-color:orange }
+          display:inline;  
+          .trash-landing { color: orangered;}
+        
+        }
         
       }
     } 
@@ -92,10 +97,11 @@ background: url(https://lh3.googleusercontent.com/-g5D1w5koq2g/WDL92v55toI/AAAAA
   
   .pie-landing{
     // PieLanding.js 
+    
     .footer-landing {
       padding-top: 15px;
       padding-bottom: 2px;
-      //text-align: center;
+      height: 70px;
       background: url(https://lh3.googleusercontent.com/-g5D1w5koq2g/WDL92v55toI/AAAAAAAAIoI/CjQxH0I97Wwde_g4V5yNgS7QlINwpq8IgCJoC/w800-h600/ng-colab-space_night.gif); 
       h1{
         //vertical-align: 10px;;

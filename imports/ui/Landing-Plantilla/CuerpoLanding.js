@@ -24,7 +24,7 @@ class CuerpoLanding extends React.Component{
 	}
 	renderNotas() {
 		 var estiloLogo = {
-			 logo:{width: "15px", height: "15px"}};
+			 logo:{width: "15px", height: "15px",cursor: 'pointer'} };
 		return this.state.notas.map((note) => {
 			return(
 			<div key={note._id} className="cuerpo-landing-notes">
@@ -32,7 +32,7 @@ class CuerpoLanding extends React.Component{
 					<div className='p' >
 					{note.noteName} </div> 
 					<img onClick={()=> Notas.remove(note._id)} src="images/trash.svg" 
-					size="mini" style={estiloLogo.logo} />
+					size="mini" className="trash-landing" style={estiloLogo.logo} />
 				</div>
 			</div>);
 		});
@@ -55,7 +55,7 @@ class CuerpoLanding extends React.Component{
 		return <p>{usuario}</p>
 	} 
 	correoUsuarioActual()	{
-		var estilosEmail = {color: 'lightblue'};
+		var estilosEmail = {color: 'lightblue', fontSize: '15px'};
 		var user = Meteor.user();
 		var email = user && user.emails && user.emails[0].address
 		return <p style={estilosEmail}>{email}</p>;
