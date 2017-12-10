@@ -1,6 +1,6 @@
 import React from 'react';
 //import '../stylesheets/style.css';
-import NavbarLanding from './Landing-Plantilla/NavbarLanding';
+
 import CabeceraLanding from './Landing-Plantilla/CabeceraLanding';
 import CuerpoLanding from './Landing-Plantilla/CuerpoLanding';
 import PieLanding from './Landing-Plantilla/PieLanding';

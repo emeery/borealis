@@ -1,20 +1,23 @@
 import React from 'react';
 // https://stackoverflow.com/questions/17117073/jquery-hide-show-based-on-scroll
 
-export default class NavbarBoots extends React.Component {
+class NavbarV extends React.Component {
     render(props) {
+        var estiloLogo = {width: "50px", height: "50px",
+        paddingTop:"4px"};
         return(
-        <div className="navbar-boots">
+        <div className="navbar-v">
         <nav>
                 <ul>
-                  <li><a>{this.props.title}</a></li>
-                  <li><a id="subtitulo">subtitulo</a></li>
+                <img src="images/recycling.png" 
+			        size="mini" style={estiloLogo} />
                 </ul>
             </nav>  
         </div>  
         ); // return
     };
 }
-NavbarBoots.propTypes = {
+export default NavbarV;
+NavbarV.propTypes = {
     title: React.PropTypes.string.isRequired
 }

@@ -28,7 +28,7 @@ export default class Logeo extends React.Component {
         }
         //const fondoBorealis = '/images'
         return(
-            <div style={esquema}className="container-logeo-vitae">
+            <div style={esquema} className="container-logeo-vitae">
             <div  className="logeo-vitae">
                 <div className="header wrap">
                     <h1>borealis </h1>

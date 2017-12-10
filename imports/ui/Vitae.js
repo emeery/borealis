@@ -1,35 +1,19 @@
 import React from 'react';
-import NavbarBoots from './Vitae-Plantilla/NavbarBoots';
+import NavbarV from './Vitae-Plantilla/NavbarV';
 
 //import React, { Component } from 'react';
 class Vitae extends React.Component {
+
     render() {
-        return(<div>
-            <h1>Animales por alfabeto en inglés</h1>
+        var fondoBorealis = '/images/sky.jpg';
+        const esquema = {
+            backgroundImage: "url(" + fondoBorealis + ")",
+            backgroundSize: 'cover' };
+        //const esquema2 = {height:'1000px', backgroundColor:'salmon'};
+        return(<div className="page-vitae">
             
-            <div className="container">
-              <div className="heading">A</div>
-              <div>American Buffalo</div>
-              <div>Aardvark</div>
-              <div>Alligator</div>  
-              <div>Antelope</div>    
-            
-              <div className="heading">B</div>
-              <div>Baboon</div>
-              <div>Bat</div>
-              <div>Blue Bird</div>
-              
-              <div className="heading">C</div>
-              <div>Cat</div>
-              <div>Camel</div>
-              <div>Chicken</div>  
-              <div>Chipmunk</div>    
-            
-              <div className="heading">D</div>
-              <div>Dog</div>
-              <div>Donkey</div>
-              <div>Dave</div>  
-              <div>Duck</div>      
+            <div >
+                <div><NavbarV title='R'/></div>
             </div>
         </div>);
     }
