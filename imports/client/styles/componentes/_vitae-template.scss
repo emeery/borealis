@@ -2,6 +2,23 @@
 @import url(https://fonts.googleapis.com/css?family=Shrikhand);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Kanit);
+.navbar-side { background-color: firebrick;
+ width: 100% a{display: block;}
+ 
+ a {
+   text-align: center;
+  color: lightblue;
+  background-color: rgba(0, 0, 0, 0.24);
+  height: 25%;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: #c94e50;
+  }
+}
+}
+
 
 // Vitae.js
 .page-vitae{
@@ -16,8 +33,9 @@
       
       li:first-child { font-family: 'Kanit' , serif;
       color: darkblue; font-size: 5rem;
-      display: inline; padding-top: 4px; } }
+      display: inline; padding-top: 4px; } } // ul
       }
+      li{color:whitesmoke; display: inline; float: right; }
   } // navbar-v
 } // page-vitae
 

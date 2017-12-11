@@ -1,25 +1,28 @@
+import { slide as Menu } from 'react-burger-menu'
 import React from 'react';
-import NavbarV from './Vitae-Plantilla/NavbarV';
-
-//import React, { Component } from 'react';
 class Vitae extends React.Component {
+  showSettings (event) {
+    event.preventDefault();
+   
+  }
 
-    render() {
-        var fondoBorealis = '/images/sky.jpg';
-        const esquema = {
-            backgroundImage: "url(" + fondoBorealis + ")",
-            backgroundSize: 'cover' };
-        //const esquema2 = {height:'1000px', backgroundColor:'salmon'};
-        return(<div className="page-vitae">
+  render () {
+      
+    return (
+        <div className='navbar-side'>
+      <Menu >
             
-            <div >
-                <div><NavbarV title='R'/></div>
-            </div>
-        </div>);
-    }
+            <a id="home" className="menu-item" href="/">Home</a>
+            <a id="about" className="menu-item" href="/about">About</a>
+            <a id="contact" className="menu-item" href="/contact">Contact</a>
+            <a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a>
+            
+        </Menu>
+        </div>
+    );
+  }
 }
 export default Vitae;
-
 
 //    jquery 
 
