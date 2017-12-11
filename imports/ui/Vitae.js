@@ -24,6 +24,11 @@ class Vitae extends React.Component {
 }
 export default Vitae;
 
+// class Acerca extends React.Component 
+
+
+
+
 //    jquery 
 
 // getWindowHeight() {
