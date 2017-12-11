@@ -7,15 +7,33 @@ class Vitae extends React.Component {
   }
 
   render () {
-      
+    var estiloLogo = {
+	width: "70px", height: "70px"};  
+	var p = {lineHeight:'5px'};
+	var a = {paddingTop: '18px'};
+	
+	
     return (
-        <div className='navbar-side'>
-      <Menu >
+        <div  className='navbar-side'>
+      <Menu  >
             
-            <a id="home" className="menu-item" href="/">Home</a>
-            <a id="about" className="menu-item" href="/about">About</a>
-            <a id="contact" className="menu-item" href="/contact">Contact</a>
-            <a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a>
+            <a id="home" className="menu-item" href="/">.
+			<p style={p}></p><img  src="images/placeholder.png" 
+			size="mini" style={estiloLogo} />
+			</a>
+			
+			<p style={p}></p>
+            <a id="about" className="menu-item" href="/about">Acerca
+			<p style={p}></p><img  src="images/learning.png" 
+			size="mini" style={estiloLogo} /></a>
+			
+			<p style={p}></p>
+            <a style={a} id="contact" className="menu-item" href="/contact">Contacto
+			<p style={p}></p><img  src="images/at.png" 
+			size="mini" style={estiloLogo} /></a>
+			
+			
+            
             
         </Menu>
         </div>

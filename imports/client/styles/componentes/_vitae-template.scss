@@ -3,21 +3,26 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Kanit);
 .navbar-side { background-color: firebrick;
- width: 100% a{display: block;}
+ width: 100%; 
+.bm-item-list {
+  overflow-y: hidden;
+}
+ 
  
  a {
-   text-align: center;
-  color: lightblue;
-  background-color: rgba(0, 0, 0, 0.24);
-  height: 25%;
-  text-decoration: none;
-
-  &:hover,
-  &:focus {
-    color: #c94e50;
-  }
-}
-}
+	text-align: center;
+	color: lightblue;
+	background-color: rgba(0, 0, 0, 0.24);
+	height: 25%;
+	text-decoration: none;
+	
+	
+	&:hover,
+	&:focus {
+	color: #c94e50;
+	  }
+	}
+} // navbar-side
 
 
 // Vitae.js

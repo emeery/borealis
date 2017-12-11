@@ -1,14 +1,11 @@
 import React from 'react';
 import {Link} from 'react-router';
 import { Accounts } from 'meteor/accounts-base';
-//import { Dropdown } from 'semantic-ui-react'
 import { Button, Popover, PopoverHeader, PopoverBody } from 'reactstrap';
-//import {Menu, Dropdown, Icon } from 'antd';
+
 import { Dropdown, DropdownItem} from 'pui-react-dropdowns';
 import F from 'ramda';
-//import {Dropdown, DropdownTrigger, DropdownContent} from 'react-simple-dropdown';
-//import DropDownMenu from 'material-ui/DropDownMenu';
-//import MenuItem from 'material-ui/MenuItem';
+
 // https://secapaz.com/handwritting/     s   c a p a z 
  //  <Link to="/registro">crea una cuenta.</Link>
  
