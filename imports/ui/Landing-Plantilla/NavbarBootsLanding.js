@@ -4,13 +4,12 @@ import { Accounts } from 'meteor/accounts-base';
 import { Button, Popover, PopoverHeader, PopoverBody } from 'reactstrap';
 
 import { Dropdown, DropdownItem} from 'pui-react-dropdowns';
-import F from 'ramda';
 
 // https://secapaz.com/handwritting/     s   c a p a z 
  //  <Link to="/registro">crea una cuenta.</Link>
  
 
-export default class NavbarBootsLanding extends React.Component {
+class NavbarBootsLanding extends React.Component {
   	render() {
 			var estiloLogo = {
 				
@@ -44,6 +43,7 @@ export default class NavbarBootsLanding extends React.Component {
 				);
     };
 }
+export default NavbarBootsLanding;
 NavbarBootsLanding.propTypes = {
     title: React.PropTypes.string.isRequired
 };

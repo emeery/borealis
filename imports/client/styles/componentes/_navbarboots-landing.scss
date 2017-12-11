@@ -3,7 +3,12 @@
 
 
 .navbarboots-landing{
+	
 	nav	{
+		
+		display: none;
+		
+		
 		padding-top: 10px;
 		.ul-landing{
 			//color: rgb(20, 98, 243);
@@ -37,10 +42,7 @@
 				} // li
 			} // navbar-menu
 		} // ul-landing
+		
+		@media (min-width: 65rem) { display: flex;}
 	} // nav
 } // navbarboots-landing 
-@media (min-widht: 767px) {
-	nav{
-		display:none;
-	}
-}
