@@ -2,26 +2,27 @@
 @import url(https://fonts.googleapis.com/css?family=Shrikhand);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Kanit);
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 .navbar-side { background-color: firebrick;
  width: 100%; 
-.bm-item-list {
-  overflow-y: hidden;
-}
- 
- 
- a {
+	.menu-item-h {color: oranged; font-size: 3rem; }
+	.menu-item-a {color: #ff5733; font-size: 3rem; font-family: 'Fjalla One', sans-serif; }
+	.menu-item-c {color:  #C70039; font-size: 3rem; font-family: 'Fjalla One', sans-serif;  }	
+  a {
 	text-align: center;
 	color: lightblue;
 	background-color: rgba(0, 0, 0, 0.24);
 	height: 25%;
 	text-decoration: none;
-	
-	
+	border-right-color: oranged;
+
 	&:hover,
 	&:focus {
 	color: #c94e50;
 	  }
-	}
+	} // a
+
 } // navbar-side
 
 
