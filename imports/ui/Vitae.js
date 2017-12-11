@@ -60,8 +60,8 @@ export default Vitae;
 //                 <div className='seccion'>
 //                     <p>
 //                         Una minima intencion a sus ideas llegaba con celeridad
-//                         un deseo descomunal por querer aspirar, trascender, propagar esta
-//                         estas palabras llegaban con impaciencia
+//                         un deseo descomunal por querer aspirar, trascender, propagar esta idea
+//                         que aterrizaba con impaciencia
 //                     </p>
 //                 </div>
 //             </div>
@@ -72,8 +72,3 @@ export default Vitae;
 // export default Vitae;
 
 
-{/* <p>
-Una minima intencion a sus ideas llegaba con celeridad
-un deseo descomunal por querer aspirar, trascender, propagar esta
-estas palabras llegaban con impaciencia
-</p> */}
