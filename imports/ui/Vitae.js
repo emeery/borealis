@@ -17,18 +17,26 @@ class Vitae extends React.Component {
         <div  className='navbar-side'>
       <Menu  >
             
-            <a id="home" className="menu-item-h" href="/">.
+			
+            <a id="home" className="menu-item-h" href="/">
+			<span className='g'>.</span>
 			<p style={p}></p><img  src="images/placeholder.png" 
 			size="mini" style={estiloLogo} />
 			</a>
 			
+			
+			
 			<p style={p}></p>
-            <a id="about" className="menu-item-a" href="/about"><span>A</span>cerca
+            <a id="about" className="menu-item-h" href="/about">
+			<span className='g'>Acerca</span>
 			<p style={p}></p><img  src="images/learning.png" 
 			size="mini" style={estiloLogo} /></a>
 			
+			
+			
 			<p style={p}></p>
-            <a style={a} id="contact" className="menu-item-c" href="/contact">Contacto
+            <a style={a} id="contact" className="menu-item-h" href="/contact">
+			<span className='g'>Contacto</span>
 			<p style={p}></p><img  src="images/at.png" 
 			size="mini" style={estiloLogo} /></a>
 			
