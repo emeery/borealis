@@ -8,6 +8,7 @@
     "animate.css": "^3.5.2",
     "antd": "^2.13.10",
     "babel-runtime": "^6.26.0",
+    "bootstrap": "^3.3.7",
     "indexof": "0.0.1",
     "material-ui": "^0.19.4",
     "meteor-node-stubs": "~0.2.4",

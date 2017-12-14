@@ -1,6 +1,11 @@
-.sidebar-puntos { 
-	text-align: center;
+.sidebar-puntos { text-align: center; 
+	
+	.grid {  border-color: 50px salmon; }
 
-ul {  li{ list-style: none; color: lightblue; font-size: 2rem;}  }
+h1 { color: lightgray; }
+span { color: lightseagreen }
+ul {
+li{ list-style: none; color: whitesmoke; font-size: 2rem;}  }
+
 
 } // sidebar-puntos
