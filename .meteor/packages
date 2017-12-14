@@ -22,7 +22,7 @@ fourseven:scss
 accounts-base
 accounts-password
 tsega:skrollr
-twbs:bootstrap
+twbs:bootstrap@=4.0.0-alpha2
 fortawesome:fontawesome
 superandrew:viewport
 jquery

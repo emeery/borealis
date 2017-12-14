@@ -7,7 +7,7 @@ import SideBar from '../imports/ui/SideBar';
 // import cambioAutenticacion
 //import { Menu, Dropdown, Icon } from 'antd';
 import {MediaQuery} from 'react-responsive';
-
+import 'bootstrap';
 Tracker.autorun(() => {
   const estaAutenticado = !!Meteor.userId();
   cambioAutenticacion(estaAutenticado);

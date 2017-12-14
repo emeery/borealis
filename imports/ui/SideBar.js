@@ -1,8 +1,12 @@
 import React from 'react';
+import { Container, Row, Col } from 'reactstrap';
 
 class SideBar extends React.Component {
+	
 	render() {
-			var estilo = { textDecoration: "underline" };
+			var estilo = { 
+			border: {borderColor:'salmon', borderWidth:'1px', borderStyle:'solid', color: 'lightblue'},
+			};
 			return (
 			<div className='sidebar-puntos'> 
 			
@@ -12,7 +16,7 @@ class SideBar extends React.Component {
 							<li> Leer algo nuevo todos los dias. </li>
 							<li> Acepta tus errores y sigue adelante. </li>
 							<li> Acostumbrate a levantarte temprano. </li>
-							<li style={estilo}>Cuida tu cuerpo</li>
+							<li style={{textDecoration:'underline'}}>Cuida tu cuerpo</li>
 							<li> aprender a delegar </li>
 			</ul>
 			</div>
@@ -26,9 +30,20 @@ class SideBar extends React.Component {
 							<li>solo doy mi punto de vista,  un renglon en el temario </li> 
 			</ul>
 			</div>
-
+				<Container>
+					<Row style={estilo.border}>
+					  <Col>.col</Col>
+					</Row>
+					<Row>
+					  <Col style={estilo.border} >.col</Col>
+					  <Col style={estilo.border} >.col</Col>
+					  <Col style={estilo.border} >.col</Col>
+					  <Col style={estilo.border} >.col</Col>
+					</Row>
+				</Container>
+		
+			</div>
 			
-			</div> 
 			
 		
 			);
