@@ -6,7 +6,10 @@ class SideBar extends React.Component {
 	
 	render() {
 			var estilo = { 
-			border: {borderColor:'salmon', borderWidth:'1px', borderStyle:'solid', color: 'lightblue', paddingBottom: '15px'}, estiloLogo : { width: "50px", height: "50px" }, borderTitle: {paddingBottom: '15px' },
+			border: {borderColor:'salmon', borderWidth:'1px', 
+			borderStyle:'solid', color: 'lightblue', paddingBottom: '15px'}, 
+			estiloLogo : { width: "50px", height: "50px" }, 
+			borderTitle: {paddingBottom: '15px' },
 			};
 			return (
 			<div className='sidebar-puntos'> 
@@ -24,7 +27,7 @@ class SideBar extends React.Component {
 			
 			<div className='grid'>
 			<h1><span>p</span>ensamientos</h1>
-			<ul> <li>tal vez solo un cuento trivial, un pensamiento que sentó en diagonal</li>	
+			<ul> 
 							<li>sin tener en que caerme y con el cuerpo abatido</li>
 							<li>mi movimiento asistido por un pensamiento abstraido</li>
 							<li>influenciado en el vecindario, estas palabras no son del armario</li>
@@ -34,17 +37,15 @@ class SideBar extends React.Component {
 			</div>
 				<Container>
 					<Row style={estilo.borderTitle}>
-					
-					  <Col>
-					 <img src="images/mouse.png" 
-						size="mini" style={estilo.estiloLogo} />
-					</Col>
+						<Col>
+							<img src="images/mouse.png" 
+							size="mini" style={estilo.estiloLogo} />
+						</Col>
 					</Row>
 					<Row>
 					  <Col style={estilo.border} >Cualquier dispositivo.</Col>
 					  <Col style={estilo.border} >Menos codigo.</Col>
 					  <Col style={estilo.border} >Herramientas extensibles.</Col>
-					  
 					</Row>
 				</Container>
 		
