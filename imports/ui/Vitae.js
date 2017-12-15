@@ -2,7 +2,16 @@
 import React from 'react';
 import {Container, Row, Col} from 'reactstrap';
 class Vitae extends React.Component {
-	render() {
+    constructor(props) {
+		super(props);    
+		this.alternarMenu = this.alternarMenu.bind(this);
+		this.controlarApuntador = this.controlarApuntador.bind(this);
+		this.state = {visible:false};
+	}; // comillas 
+	alternarMenu () { this.setState({visible:!this.state.visible}); }
+	controlarApuntador (e) { this.alternarMenu(); console.log('clic');
+    	e.stopPropagation(); }
+    render() {
 			var estilo = { 
 			border: {borderColor:'salmon', borderWidth:'1px', 
 			borderStyle:'solid', color: 'lightblue', paddingBottom: '15px'}, 
@@ -11,7 +20,8 @@ class Vitae extends React.Component {
 			};
 			return (
 			<div className='sidebar-puntos'> 
-			
+			<Boton  controlarApuntador={this.controlarApuntador} />
+			<Menu controlarApuntador={this.controlarApuntador} menuVisible={this.state.visible} />
 			<div className='grid'>
 			<h1><span>h</span>abitos</h1>
 			<ul> <li> No a las distracciones </li> 
@@ -28,6 +38,7 @@ class Vitae extends React.Component {
 			<ul> 
 							<li>sin tener en que caerme y con el cuerpo abatido</li>
 							<li>mi movimiento asistido por un pensamiento abstraido</li>
+							<li>me encontraba sumido en el transporte rumbo a </li>
 							<li>influenciado en el vecindario, estas palabras no son del armario</li>
 							<li>solo doy mi punto de vista,  un renglon en el temario </li> 
 			</ul>
@@ -55,8 +66,20 @@ class Vitae extends React.Component {
 	};
 }
 export default Vitae;
+class Boton extends React.Component {
+	render() { 
+		return(<button className='roundButton'onMouseDown={this.props.controlarApuntador}></button> ); 
+	}
+}
+class Menu extends React.Component {
+	render() { 
+		const { menuVisible} = this.props;
+		return(<div onMouseDown={this.props.controlarApuntador} className={this.props.menuVisible} >
+		<h2><a href='#'>Acerca</a></h2>
 
-
+		</div>);
+	}
+}
 
 //    jquery 
 
