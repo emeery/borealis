@@ -16,10 +16,27 @@ Meteor.startup(() => {
 	Meteor.call('sumaNumeros', 11 , 20, (err, res) =>{
 		console.log(res);
 	});
-  ReactDOM.render(routes, document.getElementById('app'));
+  ReactDOM.render(<Camisa col='blue' num='666' talla='mediana' />, document.getElementById('app'));
 });
-
-
+class Camisa extends React.Component {
+  
+  render() { return(<div>
+      <Etiqueta col={this.props.col} num={this.props.num} 
+      talla={this.props.talla}/>
+    </div>);}
+}
+class Etiqueta extends React.Component {
+  render() {
+    return(<div>
+      <Display col={this.props.col} num={this.props.num} talla={this.props.talla}/></div>);
+  }
+}
+class Display extends React.Component {
+  render(){ 
+    //const {Colorize} = this.props;
+    return(<div> <p >{this.props.col}</p>
+  <p>{this.props.num}</p> <p>{this.props.talla}</p></div>);}
+}
 // class Overlay extends React.Component {
 //   state = {
 //     visible: false,

@@ -50,18 +50,13 @@ class Vitae extends React.Component {
 							<img src="images/mouse.png" 
 							size="mini" style={estilo.estiloLogo} />
 						</Col>
-					</Row>
-					<Row>
+					</Row> <Row>
 					  <Col style={estilo.border} >Cualquier dispositivo.</Col>
 					  <Col style={estilo.border} >Menos codigo.</Col>
 					  <Col style={estilo.border} >Herramientas extensibles.</Col>
 					</Row>
 				</Container>
-		
-			</div>
-			
-			
-		
+				</div>
 			);
 	};
 }
@@ -74,7 +69,7 @@ class Boton extends React.Component {
 class Menu extends React.Component {
 	render() { 
 		const { menuVisible} = this.props;
-		return(<div onMouseDown={this.props.controlarApuntador} className={this.props.menuVisible} >
+		return(<div onMouseDown={this.props.controlarApuntador} className={menuVisible ? 'show':'hide'} >
 		<h2><a href='#'>Acerca</a></h2>
 
 		</div>);
