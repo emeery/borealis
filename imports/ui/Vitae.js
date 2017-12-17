@@ -70,10 +70,12 @@ class Boton extends React.Component {
 class Menu extends React.Component {
 	render() { 
 		const { menuVisible} = this.props;
+		const estilos = {color: 'salmon'}
 		const className = menuVisible ? 'flyoutMenu show' : 'flyoutMenu hide';
 		return(<div onMouseDown={this.props.controlarApuntador} className={className} >
-		<h2><a href='#'>Acerca</a></h2>
-
+			<div  className='menu-lateral'>
+				<h2><a  href='#'><span>A</span>cerca</a></h2>
+			</div>
 		</div>);
 	}
 }

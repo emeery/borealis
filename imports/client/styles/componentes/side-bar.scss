@@ -1,5 +1,67 @@
-// clase Boton
-.roundButton {
+
+
+// Vitae.js
+.sidebar-puntos { text-align: center; border-top-color: 4px solid salmon;	
+h1 { color: lightgray; }
+span { color: lightseagreen }
+ul {li{ list-style: none; color: whitesmoke; font-size: 2rem;}  }
+// filter: blur(5px);
+// -webkit-filter: blur(5px);
+} // sidebar-puntos
+
+
+
+// menu lateral Vitae.js
+.flyoutMenu {
+    width: 50vw;
+    height: 100vh;
+    background-color: #FFE600;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform .3s
+                cubic-bezier(0, .52, 0, 1);
+    overflow: scroll;
+    z-index: 1000;
+    
+  }
+   
+  .flyoutMenu.hide {
+    transform: translate3d(-100vw, 0, 0);
+  }
+   
+  .flyoutMenu.show {
+    transform: translate3d(0vw, 0, 0);
+    overflow: hidden;
+    color: white;
+    border-color:salmon;
+    border-width:1px; 
+    border-style:solid;
+    background-color: transparent;
+    width: 60vh;
+    transition: transform 0.3s ease-in-out;
+    // filter: blur(5px);
+    // -webkit-filter: blur(5px);
+    border-radius:5px;
+    .menu-lateral { padding-top: 10rem;}
+  }
+   
+  .flyoutMenu h2 a {
+    
+    color: salmon;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 8rem;
+  }
+   
+  .flyoutMenu h2 a:hover {
+    text-decoration: underline;
+    color: salmon;
+    span {color: salmon;}
+  }
+
+  // boton circular
+  .roundButton {
     background-color: #96D9FF;
     margin-bottom: 20px;
     width: 50px;
@@ -20,44 +82,4 @@
   .roundButton:active {
     border-color: #003557;
     background-color: #FFF;
-  }
-
-// Vitae.js
-.sidebar-puntos { text-align: center; border-top-color: 4px solid salmon;	
-h1 { color: lightgray; }
-span { color: lightseagreen }
-ul {
-li{ list-style: none; color: whitesmoke; font-size: 2rem;}  }
-} // sidebar-puntos
-
-.flyoutMenu {
-    width: 50vw;
-    height: 100vh;
-    background-color: #FFE600;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: transform .3s
-                cubic-bezier(0, .52, 0, 1);
-    overflow: scroll;
-    z-index: 1000;
-  }
-   
-  .flyoutMenu.hide {
-    transform: translate3d(-100vw, 0, 0);
-  }
-   
-  .flyoutMenu.show {
-    transform: translate3d(0vw, 0, 0);
-    overflow: hidden;
-  }
-   
-  .flyoutMenu h2 a {
-    color: #333;
-    margin-left: 15px;
-    text-decoration: none;
-  }
-   
-  .flyoutMenu h2 a:hover {
-    text-decoration: underline;
   }
