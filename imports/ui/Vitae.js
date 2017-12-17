@@ -55,6 +55,7 @@ class Vitae extends React.Component {
 					  <Col style={estilo.border} >Menos codigo.</Col>
 					  <Col style={estilo.border} >Herramientas extensibles.</Col>
 					</Row>
+					
 				</Container>
 				</div>
 			);
@@ -69,7 +70,8 @@ class Boton extends React.Component {
 class Menu extends React.Component {
 	render() { 
 		const { menuVisible} = this.props;
-		return(<div onMouseDown={this.props.controlarApuntador} className={menuVisible ? 'show':'hide'} >
+		const className = menuVisible ? 'flyoutMenu show' : 'flyoutMenu hide';
+		return(<div onMouseDown={this.props.controlarApuntador} className={className} >
 		<h2><a href='#'>Acerca</a></h2>
 
 		</div>);

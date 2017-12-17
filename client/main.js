@@ -15,8 +15,9 @@ Tracker.autorun(() => {
 Meteor.startup(() => {
 	Meteor.call('sumaNumeros', 11 , 20, (err, res) =>{
 		console.log(res);
-	});
-  ReactDOM.render(<Camisa col='blue' num='666' talla='mediana' />, document.getElementById('app'));
+  });
+  // <Camisa col='blue' num='666' talla='mediana' />
+  ReactDOM.render(routes, document.getElementById('app'));
 });
 class Camisa extends React.Component {
   
