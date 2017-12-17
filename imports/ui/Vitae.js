@@ -70,11 +70,16 @@ class Boton extends React.Component {
 class Menu extends React.Component {
 	render() { 
 		const { menuVisible} = this.props;
-		const estilos = {color: 'salmon'}
+		const rocket = {width: '70px', height:'70px'}
 		const className = menuVisible ? 'flyoutMenu show' : 'flyoutMenu hide';
 		return(<div onMouseDown={this.props.controlarApuntador} className={className} >
 			<div  className='menu-lateral'>
+				<img src="images/icon-rocket.png" 
+							size="mini" style={rocket} />
 				<h2><a  href='#'><span>A</span>cerca</a></h2>
+				<h2><a  href='#'><span>C</span>ontacto</a></h2>
+				{/* <img src="images/kendra.jpg" 
+							size="mini" style={estilosKendra} /> */}
 			</div>
 		</div>);
 	}

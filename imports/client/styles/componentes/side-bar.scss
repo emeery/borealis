@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 
 // Vitae.js
 .sidebar-puntos { text-align: center; border-top-color: 4px solid salmon;	
@@ -40,24 +40,33 @@ ul {li{ list-style: none; color: whitesmoke; font-size: 2rem;}  }
     background-color: transparent;
     width: 60vh;
     transition: transform 0.3s ease-in-out;
-    // filter: blur(5px);
-    // -webkit-filter: blur(5px);
+    
     border-radius:5px;
-    .menu-lateral { padding-top: 10rem;}
+    .menu-lateral { padding-top: 10rem; }
   }
    
   .flyoutMenu h2 a {
-    
+    font-family: 'Amatic SC', cursive;
     color: salmon;
     margin-left: 15px;
     text-decoration: none;
     font-size: 8rem;
+    padding-top: 10px;
   }
    
   .flyoutMenu h2 a:hover {
     text-decoration: underline;
     color: salmon;
     span {color: salmon;}
+  }
+
+  h2:nth-child(2) {
+    color: salmon; text-decoration: none;
+  }
+
+  h2:nth-child(2) a:hover {
+    color: #FF0040; text-decoration: underline;
+    span {color: #FF0040;}
   }
 
   // boton circular
