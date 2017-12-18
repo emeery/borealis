@@ -40,10 +40,24 @@ ul {li{ list-style: none; color: whitesmoke; font-size: 2rem;}  }
     background-color: transparent;
     width: 60vh;
     transition: transform 0.3s ease-in-out;
-    
     border-radius:5px;
-    .menu-lateral { padding-top: 10rem; }
-  }
+    
+    .menu-lateral { 
+      padding-top: 10rem; 
+      hr {
+        width: 150px;
+        //text-align: left;
+        padding-left: 50px;
+        //margin-top: 3px;
+        margin: auto;
+        float: center;
+        border: 0; 
+        height: 2px;
+        background: whitesmoke;
+        background-image: linear-gradient(to right, #ccc, salmon, #ccc); }
+      .blur {-webkit-filter: blur(5px); filter: blur(5px); height: 100px; }
+    }
+  } // flyoutMenu.show
    
   .flyoutMenu h2 a {
     font-family: 'Amatic SC', cursive;

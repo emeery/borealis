@@ -19,7 +19,7 @@ class Vitae extends React.Component {
 			borderTitle: {paddingBottom: '15px' },
 			};
 			return (
-			<div className='sidebar-puntos'> 
+			<div className='sidebar-puntos'>
 			<Boton  controlarApuntador={this.controlarApuntador} />
 			<Menu controlarApuntador={this.controlarApuntador} menuVisible={this.state.visible} />
 			<div className='grid'>
@@ -64,7 +64,7 @@ class Vitae extends React.Component {
 export default Vitae;
 class Boton extends React.Component {
 	render() { 
-		return(<button className='roundButton'onMouseDown={this.props.controlarApuntador}></button> ); 
+		return(<button  className='roundButton'onMouseDown={this.props.controlarApuntador}></button> ); 
 	}
 }
 class Menu extends React.Component {
@@ -72,14 +72,23 @@ class Menu extends React.Component {
 		const { menuVisible} = this.props;
 		const rocket = {width: '70px', height:'70px'}
 		const className = menuVisible ? 'flyoutMenu show' : 'flyoutMenu hide';
+		const blur = ['-webkit-filter: blur(5px)', 'filter: blur(5px)' ]
 		return(<div onMouseDown={this.props.controlarApuntador} className={className} >
 			<div  className='menu-lateral'>
 				<img src="images/icon-rocket.png" 
 							size="mini" style={rocket} />
 				<h2><a  href='#'><span>A</span>cerca</a></h2>
 				<h2><a  href='#'><span>C</span>ontacto</a></h2>
-				{/* <img src="images/kendra.jpg" 
-							size="mini" style={estilosKendra} /> */}
+				<div style={{ paddingTop: '10px'}}>
+					<hr></hr>
+				</div>
+				<div style={{ paddingTop: '10px'}}>
+					<iframe src="https://open.spotify.com/embed/user/emeery/playlist/5ZUCEmqNDcx4HhVaMAgliO" 
+					width="300" height="87" frameborder="0" allowtransparency="true"></iframe>
+				</div>
+				<div className='blur'>
+					
+				</div>
 			</div>
 		</div>);
 	}
@@ -107,24 +116,10 @@ class Menu extends React.Component {
 
 
 
-// class Vitae extends React.Component {
-//     render() {
-//         return(
-//             <div className='fila'>
-//             <NavbarBoots title='un header' />
-//             <div className='espacio-fila'>
-//                 <div className='seccion'>
-//                     <p>
+
 //                         Una minima intencion a sus ideas llegaba con celeridad
 //                         un deseo descomunal por querer aspirar, trascender, propagar esta idea
 //                         que aterrizaba con impaciencia
-//                     </p>
-//                 </div>
-//             </div>
-//             </div>
-//         );
-//     }
-// }
-// export default Vitae;
+//                    
 
 
