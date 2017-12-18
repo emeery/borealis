@@ -29,12 +29,12 @@ export default class Logeo extends React.Component {
         return(
             <div style={trans} className="container-logeo-vitae">
             <div style={{paddingTop:'40vh'}} className="logeo-vitae">
-                <div className="header wrap">
+                <div>
                     <h1>borealis </h1>
                 </div>
-					<div className="form">
+					<div >
 					<center>
-                    {this.state.error ? <p>{this.state.error}</p> : undefined}
+                    {this.state.error ? <p style={{color:'white'}}>{this.state.error}</p> : undefined}
                         <form className="form-logeo-vitae" onSubmit={this.onSubmit.bind(this)}>
                             <input className="input-logeo" autoComplete="off" type="email" ref="email" placeholder="correo" />
                             <input className="input-logeo" autoComplete="off" type="password" ref="pass" placeholder="••••••••••" />

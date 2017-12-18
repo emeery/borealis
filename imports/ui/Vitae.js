@@ -72,7 +72,8 @@ class Menu extends React.Component {
 		const { menuVisible} = this.props;
 		const rocket = {width: '70px', height:'70px'}
 		const className = menuVisible ? 'flyoutMenu show' : 'flyoutMenu hide';
-		const blur = ['-webkit-filter: blur(5px)', 'filter: blur(5px)' ]
+		var fondoBorealis = '/images/sky.jpg';
+        const esquema = { backgroundImage: "url(" + fondoBorealis + ")" };
 		return(<div onMouseDown={this.props.controlarApuntador} className={className} >
 			<div  className='menu-lateral'>
 				<img src="images/icon-rocket.png" 
@@ -86,9 +87,7 @@ class Menu extends React.Component {
 					<iframe src="https://open.spotify.com/embed/user/emeery/playlist/5ZUCEmqNDcx4HhVaMAgliO" 
 					width="300" height="87" frameborder="0" allowtransparency="true"></iframe>
 				</div>
-				<div className='blur'>
-					
-				</div>
+				
 			</div>
 		</div>);
 	}
@@ -118,12 +117,11 @@ class Menu extends React.Component {
 
 
 //                         Una minima intencion a sus ideas llegaba con celeridad
-<<<<<<< HEAD
-//                         un deseo descomunal por querer aspirar, trascender, 
-=======
-//                         un deseo descomunal por querer aspirar, trascender, propagar esta idea
-//                         que aterrizaba con impaciencia
-//                    
->>>>>>> 210cf9b695f53f7b7156d57433ded307f7ce4e71
+
+
+
+//                         un deseo descomunal por querer aspirar, trascender, propagar esta idea que aterrizaba con impaciencia
+   
+
 
 

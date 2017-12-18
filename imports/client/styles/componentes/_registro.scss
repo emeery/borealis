@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Monserrat);
+
+	// Logeo.js
+ .container-registro {
+    margin: -20px;
+    padding-top: 15rem;
+    top: 0; left: 0; bottom: 0; right: 0;
+    
+    text-align: center;
+    background-color: transparent;
+	position: relative;
+    .registro-vitae{
+        //background: url(https://lh3.googleusercontent.com/-g5D1w5koq2g/WDL92v55toI/AAAAAAAAIoI/CjQxH0I97Wwde_g4V5yNgS7QlINwpq8IgCJoC/w800-h600/ng-colab-space_night.gif);  
+        // no-repeat center center fixed;
+        h1{
+            padding-top: 10px;
+			font-family: 'Pacifico', serif;
+            font-size: 48px;
+            text-align: center;
+            color: #212121;
+            text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+        }
+		
+        .form-registro {
+			float: center;
+			.input-registro {
+				width: 200px;
+				background-color: #ddd;
+				color: #253849;
+				
+			}	 
+		}
+        .link-to{
+            font-family: 'Encode Sans Expanded', serif;
+            color: #fc6c85;
+            text-decoration:none;
+			font-size: 15px;
+            &:hover, &:focus {
+               transform: scale(1.2);
+                //border-color: white;
+                color: orangered;
+            } 
+        }
+    } // .logeo-vitae
+}
+
+
+
+.form-registro {
+    
+	.btn {
+        color: white;
+        background-color: transparent;
+        border-color: #ff7f50;
+        padding-bottom: 4px;
+        padding-top: 3px;
+        &:hover, &:focus {
+          //background: #00E1FF ease, transform .2s ease;
+          color: rgb(20, 98, 243);
+          transform: scale(1.2);
+          border-color: white;
+          color: orangered;
+      } 
+    }
+}
+.input-registro {
+    background: transparent;
+    opacity: 0.6;
+    display: flex;
+    color: #f2ece4;
+    
+    opacity: 0.6;
+    outline: none;
+    padding: 10px 40px; 
+    
+    width: 300px;
+    border-radius: 25px;
+    
+    &:hover, &:focus {
+        //background: #00E1FF ease, transform .2s ease;
+        color: salmon;
+        transform: scale(1.1);
+    }
+    
+}
+
+
+input::placeholder {
+    color: whitesmoke;
+}

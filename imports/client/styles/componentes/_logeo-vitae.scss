@@ -4,16 +4,15 @@
 
 	// Logeo.js
  .container-logeo-vitae {
-    margin: -20px;
-    //position: absolute;
+    
+    padding-top: 10rem;
     top: 0; left: 0; bottom: 0; right: 0;
-    //height: 10px;
+    
     text-align: center;
     background-color: #ddd;
 	position: relative;
     .logeo-vitae{
-        //background: url(https://lh3.googleusercontent.com/-g5D1w5koq2g/WDL92v55toI/AAAAAAAAIoI/CjQxH0I97Wwde_g4V5yNgS7QlINwpq8IgCJoC/w800-h600/ng-colab-space_night.gif);  
-        // no-repeat center center fixed;
+        
         h1{
             padding-top: 10px;
 			font-family: 'Pacifico', serif;
@@ -36,6 +35,7 @@
             font-family: 'Encode Sans Expanded', serif;
             color: #fc6c85;
             text-decoration:none;
+			font-size:15px;
             &:hover, &:focus {
                transform: scale(1.2);
                 //border-color: white;
@@ -69,11 +69,11 @@
     opacity: 0.6;
     display: flex;
     color: #f2ece4;
-    //background: transparent;
+    
     opacity: 0.6;
     outline: none;
     padding: 10px 40px; 
-    //background: transparent;
+    
     width: 300px;
     border-radius: 25px;
     //border: black;

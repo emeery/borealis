@@ -30,16 +30,21 @@ export default class Registro extends React.Component {
     
 
     render() {
-        return(
-            <div>
-                <h1>Salva tus notas</h1>
+        const float = {float: 'center'}
+		return(
+            <div className='container-registro'>
+				<div className='registro-vitae'>
+                <h1>Borealis</h1>
                 {this.state.error ? <p>{this.state.error}</p> : undefined}
-                <form onSubmit={this.onSubmit.bind(this)} noValidate>
-                    <input type="email" ref="email" name="email" placeholder="email"/>
-                    <input type="password" ref="pass" name="password" placeholder="password"/>
-                    <button>registrate</button>
+				<center>
+                <form  className="form-registro" onSubmit={this.onSubmit.bind(this)} >
+                    <input className="input-registro" type="email" ref="email" name="email" placeholder="email"/>
+                    <input className="input-registro" type="password" ref="pass" name="password" placeholder="password"/>
+                    <button className='btn'>registrate</button>
                 </form>
-                <Link to="/">ya tienes una cuenta</Link>
+				</center>
+                <Link className="link-to" to="/">ya tienes una cuenta</Link>
+				</div>
             </div>
         );
     };
