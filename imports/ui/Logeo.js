@@ -23,13 +23,12 @@ export default class Logeo extends React.Component {
     }
     render() {
         var fondoBorealis = '/images/sky.jpg';
-        const esquema = {
-            backgroundImage: "url(" + fondoBorealis + ")"
-        }
+        const esquema = { backgroundImage: "url(" + fondoBorealis + ")" }
         const trans = {backgroundColor:'transparent'}
+        
         return(
             <div style={trans} className="container-logeo-vitae">
-            <div  className="logeo-vitae">
+            <div style={{paddingTop:'40vh'}} className="logeo-vitae">
                 <div className="header wrap">
                     <h1>borealis </h1>
                 </div>

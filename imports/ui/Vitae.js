@@ -19,7 +19,7 @@ class Vitae extends React.Component {
 			borderTitle: {paddingBottom: '15px' },
 			};
 			return (
-			<div className='sidebar-puntos'> 
+			<div className='sidebar-puntos'>
 			<Boton  controlarApuntador={this.controlarApuntador} />
 			<Menu controlarApuntador={this.controlarApuntador} menuVisible={this.state.visible} />
 			<div className='grid'>
@@ -55,6 +55,7 @@ class Vitae extends React.Component {
 					  <Col style={estilo.border} >Menos codigo.</Col>
 					  <Col style={estilo.border} >Herramientas extensibles.</Col>
 					</Row>
+					
 				</Container>
 				</div>
 			);
@@ -63,15 +64,32 @@ class Vitae extends React.Component {
 export default Vitae;
 class Boton extends React.Component {
 	render() { 
-		return(<button className='roundButton'onMouseDown={this.props.controlarApuntador}></button> ); 
+		return(<button  className='roundButton'onMouseDown={this.props.controlarApuntador}></button> ); 
 	}
 }
 class Menu extends React.Component {
 	render() { 
 		const { menuVisible} = this.props;
-		return(<div onMouseDown={this.props.controlarApuntador} className={menuVisible ? 'show':'hide'} >
-		<h2><a href='#'>Acerca</a></h2>
-
+		const rocket = {width: '70px', height:'70px'}
+		const className = menuVisible ? 'flyoutMenu show' : 'flyoutMenu hide';
+		const blur = ['-webkit-filter: blur(5px)', 'filter: blur(5px)' ]
+		return(<div onMouseDown={this.props.controlarApuntador} className={className} >
+			<div  className='menu-lateral'>
+				<img src="images/icon-rocket.png" 
+							size="mini" style={rocket} />
+				<h2><a  href='#'><span>A</span>cerca</a></h2>
+				<h2><a  href='#'><span>C</span>ontacto</a></h2>
+				<div style={{ paddingTop: '10px'}}>
+					<hr></hr>
+				</div>
+				<div style={{ paddingTop: '10px'}}>
+					<iframe src="https://open.spotify.com/embed/user/emeery/playlist/5ZUCEmqNDcx4HhVaMAgliO" 
+					width="300" height="87" frameborder="0" allowtransparency="true"></iframe>
+				</div>
+				<div className='blur'>
+					
+				</div>
+			</div>
 		</div>);
 	}
 }
@@ -100,6 +118,12 @@ class Menu extends React.Component {
 
 
 //                         Una minima intencion a sus ideas llegaba con celeridad
+<<<<<<< HEAD
 //                         un deseo descomunal por querer aspirar, trascender, 
+=======
+//                         un deseo descomunal por querer aspirar, trascender, propagar esta idea
+//                         que aterrizaba con impaciencia
+//                    
+>>>>>>> 210cf9b695f53f7b7156d57433ded307f7ce4e71
 
 
