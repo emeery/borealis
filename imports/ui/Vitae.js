@@ -98,24 +98,8 @@ class Menu extends React.Component {
 
 
 
-// class Vitae extends React.Component {
-//     render() {
-//         return(
-//             <div className='fila'>
-//             <NavbarBoots title='un header' />
-//             <div className='espacio-fila'>
-//                 <div className='seccion'>
-//                     <p>
+
 //                         Una minima intencion a sus ideas llegaba con celeridad
-//                         un deseo descomunal por querer aspirar, trascender, propagar esta idea
-//                         que aterrizaba con impaciencia
-//                     </p>
-//                 </div>
-//             </div>
-//             </div>
-//         );
-//     }
-// }
-// export default Vitae;
+//                         un deseo descomunal por querer aspirar, trascender, 
 
 

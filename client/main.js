@@ -5,13 +5,14 @@ import {routes, cambioAutenticacion } from '../imports/routes/routes';
 import React from 'react';
 import SideBar from '../imports/ui/SideBar';
 // import cambioAutenticacion
-//import { Menu, Dropdown, Icon } from 'antd';
+import { Menu, Dropdown, Icon } from 'antd';
 
 //import 'bootstrap';
 Tracker.autorun(() => {
   const estaAutenticado = !!Meteor.userId();
   cambioAutenticacion(estaAutenticado);
 });
+// 
 Meteor.startup(() => {
 	Meteor.call('sumaNumeros', 11 , 20, (err, res) =>{
 		console.log(res);
