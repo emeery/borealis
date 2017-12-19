@@ -38,9 +38,6 @@ class Vitae extends React.Component {
 			<ul> 
 							<li>sin tener en que caerme y con el cuerpo abatido</li>
 							<li>mi movimiento asistido por un pensamiento abstraido</li>
-							<li>me encontraba sumido en el transporte rumbo a </li>
-							<li>influenciado en el vecindario, estas palabras no son del armario</li>
-							<li>solo doy mi punto de vista,  un renglon en el temario </li> 
 			</ul>
 			
 			</div>
@@ -70,22 +67,25 @@ class Boton extends React.Component {
 class Menu extends React.Component {
 	render() { 
 		const { menuVisible} = this.props;
-		const rocket = {width: '70px', height:'70px'}
+		const borealis = {width: '100%', height:'100%'}
 		const className = menuVisible ? 'flyoutMenu show' : 'flyoutMenu hide';
 		var fondoBorealis = '/images/sky.jpg';
         const esquema = { backgroundImage: "url(" + fondoBorealis + ")" };
-		return(<div onMouseDown={this.props.controlarApuntador} className={className} >
+		return(<div  onMouseDown={this.props.controlarApuntador} className={className} >
+			
 			<div  className='menu-lateral'>
-				<img src="images/icon-rocket.png" 
-							size="mini" style={rocket} />
+				<img src="images/borealis.jpg" 
+							size="mini" style={borealis} />
 				<h2><a  href='#'><span>A</span>cerca</a></h2>
+					<hr></hr>
 				<h2><a  href='#'><span>C</span>ontacto</a></h2>
+					<hr></hr>
 				<div style={{ paddingTop: '10px'}}>
 					<hr></hr>
 				</div>
 				<div style={{ paddingTop: '10px'}}>
 					<iframe src="https://open.spotify.com/embed/user/emeery/playlist/5ZUCEmqNDcx4HhVaMAgliO" 
-					width="300" height="87" frameborder="0" allowtransparency="true"></iframe>
+					width="300" height="87" frameBorder="0" allowTransparency="true"></iframe>
 				</div>
 				
 			</div>

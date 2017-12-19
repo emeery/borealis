@@ -23,6 +23,8 @@ ul {li{ list-style: none; color: whitesmoke; font-size: 2rem;}  }
                 cubic-bezier(0, .52, 0, 1);
     overflow: scroll;
     z-index: 1000;
+	
+	
     
   }
    
@@ -37,15 +39,15 @@ ul {li{ list-style: none; color: whitesmoke; font-size: 2rem;}  }
     border-color:salmon;
     border-width:1px; 
     border-style:solid;
-	background-color: transparent;
-    
-	
-    width: 60vh;
+	background-color: rgba(255, 255, 255, 0.589);
+    width: 60vw;
     transition: transform 0.3s ease-in-out;
     border-radius:5px;
     
-    .menu-lateral { 
-      padding-top: 10rem; 
+	
+    
+	.menu-lateral { 
+      padding-top: 0p; 
 	  position: absolute;
       hr {
         width: 150px;
@@ -58,8 +60,8 @@ ul {li{ list-style: none; color: whitesmoke; font-size: 2rem;}  }
         height: 2px;
         background: whitesmoke;
         background-image: linear-gradient(to right, #ccc, salmon, #ccc); }
-      .blur { }
-    }
+      
+    } // menu-lateral
   } // flyoutMenu.show
    
   .flyoutMenu h2 a {
