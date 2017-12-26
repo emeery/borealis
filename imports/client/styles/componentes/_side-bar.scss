@@ -11,7 +11,7 @@ ul {li{ list-style: none; color: whitesmoke; font-size: 2rem;}  }
 
 
 
-// menu lateral Vitae.js
+
 .flyoutMenu {
     width: 50vw;
     height: 100vh;
@@ -20,7 +20,7 @@ ul {li{ list-style: none; color: whitesmoke; font-size: 2rem;}  }
     top: 0;
     left: 0;
     transition: transform .3s
-                cubic-bezier(0, .52, 0, 1);
+    cubic-bezier(0, .52, 0, 1);
     overflow: scroll;
     z-index: 1000;
 	
@@ -47,7 +47,7 @@ ul {li{ list-style: none; color: whitesmoke; font-size: 2rem;}  }
 	
     
 	.menu-lateral { 
-      padding-top: 0p; 
+      padding-top: 0px; 
 	  position: absolute;
       hr {
         width: 150px;

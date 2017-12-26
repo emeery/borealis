@@ -20,6 +20,7 @@ class Vitae extends React.Component {
 			};
 			return (
 			<div className='sidebar-puntos'>
+			<div className='obscuro'>
 			<Boton  controlarApuntador={this.controlarApuntador} />
 			<Menu controlarApuntador={this.controlarApuntador} menuVisible={this.state.visible} />
 			<div className='grid'>
@@ -30,30 +31,26 @@ class Vitae extends React.Component {
 							<li> Acostumbrate a levantarte temprano. </li>
 							<li style={{textDecoration:'underline'}}>Cuida tu cuerpo</li>
 							<li> aprender a delegar </li>
-			</ul>
-			</div>
+			</ul></div>
 			
 			<div className='grid'>
 			<h1><span>p</span>ensamientos</h1>
-			<ul> 
-							<li>sin tener en que caerme y con el cuerpo abatido</li>
-							<li>mi movimiento asistido por un pensamiento abstraido</li>
+			<ul> <li>sin tener en que caerme y con el cuerpo abatido</li>
+				 <li>mi movimiento asistido por un pensamiento abstraido</li>
 			</ul>
 			
 			</div>
 				<Container>
 					<Row style={estilo.borderTitle}>
-						<Col>
-							<img src="images/mouse.png" 
-							size="mini" style={estilo.estiloLogo} />
-						</Col>
+						<Col><img src="images/mouse.png" 
+								size="mini" style={estilo.estiloLogo} /></Col>
 					</Row> <Row>
 					  <Col style={estilo.border} >Cualquier dispositivo.</Col>
 					  <Col style={estilo.border} >Menos codigo.</Col>
 					  <Col style={estilo.border} >Herramientas extensibles.</Col>
 					</Row>
-					
 				</Container>
+				</div>
 				</div>
 			);
 	};
@@ -93,6 +90,9 @@ class Menu extends React.Component {
 	}
 }
 
+
+
+
 //    jquery 
 
 // getWindowHeight() {
@@ -117,9 +117,6 @@ class Menu extends React.Component {
 
 
 //                         Una minima intencion a sus ideas llegaba con celeridad
-
-
-
 //                         un deseo descomunal por querer aspirar, trascender, propagar esta idea que aterrizaba con impaciencia
    
 
